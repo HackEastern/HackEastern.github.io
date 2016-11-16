@@ -2,11 +2,10 @@
 function startCountdown() {
     var hackathonDate = new Date("December 3, 2016 00:00:00");
     var today = new Date();
-    console.log(getDaysTill(hackathonDate));
     var daysLeft    = getDaysTill(hackathonDate);
-    var hoursLeft   = today.getHours()   - hackathonDate.getHours();
-    var minutesLeft = today.getMinutes() - hackathonDate.getMinutes();
-    var secondsLeft = today.getSeconds() - hackathonDate.getSeconds();
+    var hoursLeft   = 24 - (today.getHours()   - hackathonDate.getHours());
+    var minutesLeft = 60 - (today.getMinutes() - hackathonDate.getMinutes());
+    var secondsLeft = 60 - (today.getSeconds() - hackathonDate.getSeconds());
 
     document.getElementById('countdown').innerHTML =
         "<h4>December 3rd...</h4> <br />" +
@@ -25,7 +24,7 @@ function startCountdown() {
         +
         "<strong>"+secondsLeft+"</strong>" + " seconds ";
 
-    var t = setTimeout(startCountdown, 501);
+    var t = setTimeout(startCountdown, 500);
 }
 
 /**
