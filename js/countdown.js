@@ -9,8 +9,7 @@ function startCountdown() {
     var secondsLeft = today.getSeconds() - hackathonDate.getSeconds();
 
     document.getElementById('countdown').innerHTML =
-        "December 3rd, <br />" +
-        "in... <br /> <br /> " +
+        "<h4>December 3rd...</h4> <br />" +
         "<strong>"+daysLeft+"</strong>" + " days "
         +
         "<br />"
