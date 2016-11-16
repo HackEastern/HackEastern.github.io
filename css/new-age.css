@@ -363,6 +363,14 @@ section.contact ul.list-social li.social-twitter a:hover {
   background-color: white;
   color: #1da1f2;
 }
+section.contact ul.list-social li.social-github a {
+  background-color: black;
+  color: white;
+}
+section.contact ul.list-social li.social-github a:hover {
+  background-color: white;
+  color: black;
+}
 section.contact ul.list-social li.social-slack a {
   background-color: black;
 }
