@@ -26,7 +26,7 @@ function startCountdown() {
         +
         "<strong>"+secondsLeft+"</strong>" + " seconds ";
 
-    var t = setTimeout(startCountdown, 500);
+    var t = setTimeout(startCountdown, 501);
 }
 
 /**
