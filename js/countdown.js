@@ -9,12 +9,13 @@ function startCountdown() {
     var secondsLeft = today.getSeconds() - hackathonDate.getSeconds();
 
     document.getElementById('countdown').innerHTML =
+        "December 3rd, <br />" +
         "in... <br /> <br /> " +
         "<strong>"+daysLeft+"</strong>" + " days "
         +
         "<br />"
         +
-        //TODO account for a singular HOUR left.  
+        //TODO account for a singular HOUR left.
         "<strong>"+hoursLeft+"</strong>" + " hours "
         +
         "<br />"
