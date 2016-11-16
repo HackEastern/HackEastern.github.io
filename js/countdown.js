@@ -3,27 +3,28 @@ function startCountdown() {
     var hackathonDate = new Date("December 3, 2016 00:00:00");
     var today = new Date();
     console.log(getDaysTill(hackathonDate));
-    var daysLeft    = today.getDate()    - hackathonDate.getDate();
+    var daysLeft    = getDaysTill(hackathonDate);
     var hoursLeft   = today.getHours()   - hackathonDate.getHours();
     var minutesLeft = today.getMinutes() - hackathonDate.getMinutes();
     var secondsLeft = today.getSeconds() - hackathonDate.getSeconds();
 
     m = padTime(minutesLeft);
     s = padTime(secondsLeft);
-    document.getElementById('txt').innerHTML =
-        "Days left: " + daysLeft
+    document.getElementById('countdown').innerHTML =
+        "in... <br /> <br /> " +
+        "<strong>"+daysLeft+"</strong>" + " days "
         +
         "<br />"
         +
-        "Hours left: " + hoursLeft
+        "<strong>"+hoursLeft+"</strong>" + " hours "
         +
         "<br />"
         +
-        "Minutes left: " + minutesLeft
+        "<strong>"+minutesLeft+"</strong>" + " minutes "
         +
         "<br />"
         +
-        "Seconds left: " + secondsLeft;
+        "<strong>"+secondsLeft+"</strong>" + " seconds ";
 
     var t = setTimeout(startCountdown, 500);
 }
