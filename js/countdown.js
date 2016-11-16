@@ -14,6 +14,7 @@ function startCountdown() {
         +
         "<br />"
         +
+        //TODO account for a singular HOUR left.  
         "<strong>"+hoursLeft+"</strong>" + " hours "
         +
         "<br />"
