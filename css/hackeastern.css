@@ -518,23 +518,22 @@ body {
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
-.background_overlay:hover {
+/*Comment out the hover effect for now*/
+/*.background_overlay:hover {
   background-color: transparent;
   mix-blend-mode: normal;
 }
-
 .background_overlay:hover  {
   color: white;
-}
-
-.background_overlay:hover .background_overlay__header {
+}*/
+/*.background_overlay:hover .background_overlay__header {
   color: #ffffff;
 }
 .background_overlay:hover .background_overlay__header:after,
 .background_overlay:hover .background_overlay__header:before {
   background-color: #ffffff;
   width: 20%;
-}
+}*/
 .background_overlay__inner {
   display: -webkit-box;
   display: -webkit-flex;
