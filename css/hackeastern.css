@@ -144,6 +144,8 @@ p {
   }
 }
 #packing-list {
+
+    font-size: 25px;
     list-style: none;
     text-align: left;
 }
