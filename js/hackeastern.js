@@ -21,6 +21,23 @@
         $('.navbar-toggle:visible').click();
     });
 
+    //The possible image urls
+    var imageUrls = [
+      'blue-circuitry-wallpaper-wide.jpg',
+      'eatSlepCode.png',
+      'greenMatrixCode.png',
+      'macCode.png',
+      'purpleBlurCode.png',
+      'yellowWallOfCode.png'
+    ];
+
+    //generate random number 0 inclusive to 6 exclusive
+    var rand = Math.floor(Math.random() * 6);
+
+    //initialize the startup background splash screen to a random image in fullscreen folder
+    $(".background").css("background-image", "url(\"img/fullscreen/"+imageUrls[rand]+"\")");
+
+    //Disabled for now, don't need
     // // Offset for Main Navigation
     // $('#mainNav').affix({
     //     offset: {
