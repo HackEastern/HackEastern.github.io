@@ -1,8 +1,5 @@
-/*!
- * Start Bootstrap - New Age v3.3.7 (http://startbootstrap.com/template-overviews/new-age)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
+ @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700');
+
 .heading-font {
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
@@ -477,4 +474,96 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #222222;
+}
+
+
+
+/*Start swap color div*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.background {
+  background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-183436.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.background_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  mix-blend-mode: lighten;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.background_overlay:hover {
+  background-color: transparent;
+  mix-blend-mode: normal;
+}
+.background_overlay:hover .background_overlay__header {
+  color: #ffffff;
+}
+.background_overlay:hover .background_overlay__header:after,
+.background_overlay:hover .background_overlay__header:before {
+  background-color: #ffffff;
+  width: 20%;
+}
+.background_overlay__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.background_overlay__header {
+  font-size: 10vw;
+  color: #000000;
+  display: inline-block;
+  position: relative;
+}
+.background_overlay__header:after,
+.background_overlay__header:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  height: 1vh;
+  background-color: #000000;
+  -webkit-transition: width 500ms ease;
+  transition: width 500ms ease;
+}
+.background_overlay__header:after {
+  left: auto;
+  right: 50%;
+}
+.background_overlay__header:before {
+  left: 50%;
+  right: auto;
 }
