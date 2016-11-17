@@ -24,7 +24,7 @@
     //The possible image urls
     var imageUrls = [
       'blue-circuitry-wallpaper-wide.jpg',
-      'eatSlepCode.png',
+      'eatSleepCode.png',
       'greenMatrixCode.png',
       'macCode.png',
       'purpleBlurCode.png',
