@@ -143,6 +143,10 @@ p {
     color: #9524c9;
   }
 }
+#packing-list {
+    list-style: none;
+    text-align: left;
+}
 header {
   position: relative;
   width: 100%;
