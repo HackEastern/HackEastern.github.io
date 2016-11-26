@@ -1,5 +1,6 @@
 
 function startCountdown() {
+    console.log('countdown started');
     var hackathonDate = new Date("December 3, 2016 00:00:00");
     var today = new Date();
     var daysLeft    = getDaysTill(hackathonDate);
