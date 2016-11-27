@@ -13,6 +13,9 @@
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+.schedule-wrapper {
+    border-color: 1px solid #6a447e;
+}
 html,
 body {
   height: 100%;
