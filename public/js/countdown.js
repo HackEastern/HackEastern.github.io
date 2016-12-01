@@ -5,8 +5,8 @@ function startCountdown() {
     var today = new Date();
     var daysLeft    = getDaysTill(hackathonDate);
     var hoursLeft   = 24 - (today.getHours()   - hackathonDate.getHours());
-    var minutesLeft = 60 - (today.getMinutes() - hackathonDate.getMinutes());
-    var secondsLeft = 60 - (today.getSeconds() - hackathonDate.getSeconds());
+    var minutesLeft = 59 - (today.getMinutes() - hackathonDate.getMinutes());
+    var secondsLeft = 59 - (today.getSeconds() - hackathonDate.getSeconds());
 
     document.getElementById('countdown').innerHTML =
         "<span class=\"accent-text\">"+daysLeft+"</span>" + " days "
@@ -52,7 +52,7 @@ function getDaysTill(hackathonDate) {
 
     //Add the date inside the hackathon month to running total
     daysTill += hackathonDate.getDate();
-    return daysTill;
+    return daysTill - 30;
 }
 
 //Trigger the countdown timer
